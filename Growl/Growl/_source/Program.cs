@@ -64,7 +64,6 @@ namespace Growl
             this.splash = new SplashScreen(true);
             this.splash.ApplicationContextLoaded += new EventHandler(splash_ApplicationContextLoaded);
             base.MainForm = this.splash;
-
         }
 
         void splash_ApplicationContextLoaded(object sender, EventArgs e)
@@ -372,7 +371,6 @@ namespace Growl
 #endif
             // kill the app
             Application.Exit();
-
         }
 
         internal void AlreadyRunning(int signalFlag, int signalValue)
