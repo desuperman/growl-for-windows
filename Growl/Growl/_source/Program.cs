@@ -618,7 +618,6 @@ namespace Growl
 			if(this.muteToolStripMenuItem.Tag as Gtk.ImageMenuItem != null) ((Gtk.ImageMenuItem)this.muteToolStripMenuItem.Tag).Visible = !mute;
 			if(this.unmuteToolStripMenuItem.Tag as Gtk.ImageMenuItem != null) ((Gtk.ImageMenuItem)this.unmuteToolStripMenuItem.Tag).Visible = mute;
 #endif
-
             Properties.Settings.Default.MuteAllSounds = mute;
             Properties.Settings.Default.Save();
 
